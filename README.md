@@ -226,6 +226,6 @@ Accuracy targets (≥ 80 % over a balanced 60-tap held-out session, < 200 ms med
 are engineering targets, not guarantees. The only number that means anything is the one
 measured on your own desk.
 
-## Licence
+## License
 
-Not yet chosen.
+MIT. See [LICENSE](LICENSE).

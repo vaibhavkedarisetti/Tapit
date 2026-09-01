@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <AssemblyName>Tapit.Actions</AssemblyName>
+    <RootNamespace>Tapit.Actions</RootNamespace>
+
+    <!-- Used only for Clipboard and screen capture; Tapit.Actions has no UI of its own. -->
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tapit.Core\Tapit.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Tapit.Actions.Tests" />
+  </ItemGroup>
+
+</Project>

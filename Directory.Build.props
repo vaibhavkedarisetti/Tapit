@@ -1,0 +1,31 @@
+<Project>
+
+  <!--
+    Shared build settings for every Tapit project.
+
+    Tapit targets x64 Windows. Tapit.Core is deliberately plain net8.0 so the DSP
+    engine can be unit-tested without a microphone, a UI, or Windows at all.
+  -->
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PlatformTarget>x64</PlatformTarget>
+    <Deterministic>true</Deterministic>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <AnalysisLevel>latest</AnalysisLevel>
+  </PropertyGroup>
+
+  <!--
+    Hard constraint enforcement, kept where a reviewer will see it:
+    Tapit performs no network I/O for any application purpose, and takes no
+    dependency on any machine-learning, inference, cloud, or telemetry package.
+  -->
+  <PropertyGroup>
+    <TapitNoNetwork>true</TapitNoNetwork>
+    <TapitNoTelemetry>true</TapitNoTelemetry>
+  </PropertyGroup>
+
+</Project>

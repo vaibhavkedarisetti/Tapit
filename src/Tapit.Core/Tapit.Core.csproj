@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>Tapit.Core</AssemblyName>
+    <RootNamespace>Tapit.Core</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Description>
+      Portable DSP and signal-processing core for Tapit. No Windows dependency,
+      no UI dependency, no third-party packages.
+    </Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Tapit.Core.Tests" />
+    <InternalsVisibleTo Include="Tapit.Audio" />
+    <InternalsVisibleTo Include="Tapit.Audio.Tests" />
+  </ItemGroup>
+
+</Project>

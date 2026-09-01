@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <AssemblyName>Tapit.Audio</AssemblyName>
+    <RootNamespace>Tapit.Audio</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Description>
+      WASAPI capture for Tapit: device enumeration, raw-mode negotiation, event-driven
+      shared-mode capture, and device lifecycle handling.
+    </Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tapit.Core\Tapit.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Tapit.Audio.Tests" />
+  </ItemGroup>
+
+</Project>

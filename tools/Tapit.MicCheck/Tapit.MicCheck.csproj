@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <AssemblyName>Tapit.MicCheck</AssemblyName>
+    <RootNamespace>Tapit.MicCheck</RootNamespace>
+    <Description>
+      Phase 1 verification console: enumerate capture devices, measure a live WASAPI stream,
+      and replay a WAV file through the same consumer path.
+    </Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Tapit.Core\Tapit.Core.csproj" />
+    <ProjectReference Include="..\..\src\Tapit.Audio\Tapit.Audio.csproj" />
+  </ItemGroup>
+
+</Project>

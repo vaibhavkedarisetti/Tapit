@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <AssemblyName>Tapit</AssemblyName>
+    <RootNamespace>Tapit.App</RootNamespace>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <Description>Tapit - acoustic desk input for Windows.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tapit.Core\Tapit.Core.csproj" />
+    <ProjectReference Include="..\Tapit.Audio\Tapit.Audio.csproj" />
+    <ProjectReference Include="..\Tapit.Actions\Tapit.Actions.csproj" />
+  </ItemGroup>
+
+</Project>
